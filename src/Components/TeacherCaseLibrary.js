@@ -44,9 +44,9 @@ function TeacherCaseLibrary() {
   
   const fetchStudents = async () => {
     try {
-      console.log("Fetching students from:", `${apiUrl}/students`);
+      console.log("Fetching students from:", `${apiUrl}/api/students`);
       
-      const response = await axios.get(`${apiUrl}/students`); // ✅ Use environment variable
+      const response = await axios.get(`${apiUrl}/api/students`); // ✅ Use environment variable
       
       const studentOptions = response.data.map((student) => ({
         value: student.id,
